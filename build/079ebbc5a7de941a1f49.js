@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmicrofront=self.webpackChunkmicrofront||[]).push([[578],{578:(r,n,c)=>{c.r(n),c.d(n,{default:()=>t}),c(540);var e=c(848);const t=function(){return(0,e.jsx)("div",{children:"Shop"})}}}]);
