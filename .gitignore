@@ -1,5 +1,11 @@
 # Node modules
 node_modules/
 
+# Игнорировать только внешнюю папку build
+/build/
+
+# Оставить остальные папки build внутри проекта
+!**/build/
+
 # WebStorm IDE files
 .idea/
