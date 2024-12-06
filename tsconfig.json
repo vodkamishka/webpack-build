@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "ESNext", // для импортов в тайскрипт
+    "target": "es5",
+    "jsx": "react-jsx", // позволяет не импортировать в файлы реакт
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, // позволяет импортировать не используя module.exports
+    "esModuleInterop": true, // включает полную поддержку совместимости с CommonJS, позволяя использовать import и require в одном проекте
+    "baseUrl": ".", //Указывает базовую директорию, относительно которой будут вычисляться пути
+    "paths": {
+      "@/*": ["./src/*"],
+      "assets/*": ["src/assets/*"]
+    }
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS" // для импортов в тайскрипт
+    }
+  }
+}
